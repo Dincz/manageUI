@@ -26,7 +26,7 @@
         <span class="visually-hidden">Menu</span>
       </button>
       <nav class="primary-navigation" id="primary-navigation">
-      <ul role="list" class="nav-list" >
+      <ul aria-label="Primary" role="list" class="nav-list" >
         <li><a href="#"></a>Pricing</li>
         <li><a href="#"></a>Product</li>
         <li><a href="#"></a>About us</li>
@@ -44,7 +44,7 @@
     <section class="padding-block-900">
       <div class="container">
         <div class="even-columns">
-          <div>
+          <div class="flow">
             <h1 class=" fs-primary-heading fw-bold">
               Bring everyone together to build better projects
             </h1>
@@ -61,7 +61,7 @@
     <section class="padding-block-900">
       <div class="container">
         <div class="even-columns">
-          <div>
+          <div class="flow">
             <h2 class="fs-secondary-heading fw-bold">
               What's different about manage?
             </h2>
@@ -71,25 +71,31 @@
             </p>
           </div>
           <div>
-            <ul class="numbered-items" role="list">
-              <li>
+            <ul class="numbered-items | flow" role="list">
+              <li >
+                <div class="flow" style="--flow-spacer: 1em">
                 <h3 class="fs-600 fw-bold">Track company wide-projects</h3>
-                <p>
+                <p data-width="wide">
                   see how your day-to day work has been implemened with the help of manage and also improving overall
                   performance of the team members its boost the productive and speed of the team members
                 </p>
+              </div>
               </li>
-              <li>
+              <li >
+                <div class="flow" style="--flow-spacer: 1em">
                 <h3 class="fs-600 fw-bold">Advance build-in support</h3>
-                <p>Our software is well optimised for digital team members that it will help you to improve the working
+                <p data-width="wide">Our software is well optimised for digital team members that it will help you to improve the working
                   of the team and every problems you would be facing would be backed by our team</p>
-              </li>
-              <li>
+             </div>
+                </li>
+              <li >
+                <div class="flow" style="--flow-spacer: 1em">
                 <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-                <p> All the data imports you will be needing in the project will get automatically imported and
+                <p data-width="wide"> All the data imports you will be needing in the project will get automatically imported and
                   setup already for your so you won't be needing to need the hassel to import all the data again and
                   again.
                 </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -101,7 +107,7 @@
         what they've said
       </h2>
       <!-- Carousel -->
-      <button class="button"></button>
+      <button class="button">Get Started</button>
     </section>
     <section class="cta | bg-accent-400 text-neutral-100 | padding-block-700">
       <div class="container">
@@ -111,7 +117,9 @@
               Simplify how your team works today.
             </p>
           </div>
-          <div><button class="button" data-type="inverted">Get Started</button></div>
+          <div>
+            <button class="button" data-type="inverted">Get Started</button>
+          </div>
         </div>
       </div>
     </section>
@@ -121,20 +129,17 @@
       <div class="even-columns">
         <div>
           <a href="#"><img src="images/logo.svg" alt="Manage"></a>
-          <ul role="list" aria-label="social links">
-            <li>
-              <a href="">
-              </a><a aria-label="facebook" href="">
-              </a><a aria-label="twitter" href="">
-              </a><a aria-label="youtube" href="">
-              </a><a aria-label="instagram" href="">
-              </a><a aria-label="pininterest" href=""></a>
-            </li>
+          <ul role="list" aria-label="Social links">
+            <li><a aria-label="facebook" href="#"></a></li>
+            <li><a aria-label="youtube" href="#"></a></li>
+            <li><a aria-label="twitter" href="#"></a></li>
+            <li><a aria-label="pinterest" href="#"></a></li>
+            <li><a aria-label="instragram" href="#"></a></li>
           </ul>
         </div>
         <div>
           <nav class="footer-nav">
-            <ul role="list" aria-label="Footer "> 
+            <ul role="list" aria-label="Footer" class="flow" data-spacing="tight" style="--flow-spacer : 1em" > 
               <li><a href="#">Home</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Products</a></li>
@@ -147,7 +152,8 @@
         </div>
         <div>
           <form action="">
-            <input type="email"><button class="button"></button>
+            <input type="email">
+            <button class="button">Go</button>
           <p>Copyright 2020. All Rights Reserved</p>
           </form>
 
